@@ -5,21 +5,28 @@
     <meta name="viewport" content="width=device-width">
     <title>Fancy letterheaded paper</title>
     <link rel="stylesheet" href="/css/style.css">
+
     
   </head>
   <body>
 
     <article>
-      <a href="/img/logo.png"><img src="/img/logo.png" class="logo"></a>
       <h1>Awesome<br>Company</h1>
       <a href="/img/top-image.png"><img src="/img/top-image.png"></a>
 
-
+      <div class="language">
+        <ul>
+          <li><a href="#">English</a></li>
+          <li><a href="#">中文</a></li>
+          <li><a href="#">español</a></li>
+          <li><a href="#">français</a></li>
+          <li><a href="#">Deutsch</a></li>
+        </ul>
       <h2> Lorem Ipsum <h2>
           <p class="top">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..." </p>
           <p class="bottom">"There is no one who loves pain itself, who seeks after it and wants to have it, simply because
             it is pain..."</p>
-
+      </div>
       <div class = "container">
         <section>
           <h3>What is Lorem Ipsum?</h3>
@@ -68,7 +75,12 @@
           generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence
           structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from
           repetition, injected humour, or non-characteristic words etc. </p>
+        
+          <label for="wordCount">Word: </label>
+          <input type="number" id="wordCount" min="1" max="12" />
+          <button id="generateButton">Generate Lorem Ipsum</button>
         </section>
+   
       </div>
 
       <address>
@@ -82,5 +94,6 @@
 
       <a href="/img/bottom-image.png"><img src="/img/bottom-image.png"></a>
     </article>
+    <script type="module" src="js/main.js"></script>
   </body>
 </html>
